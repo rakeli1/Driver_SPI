@@ -60,6 +60,7 @@ void spi_SetMode(SPI_Mode mode)
 	  case SPI_MODE3: SPCR |= (1 << CPOL); SPCR |= (1 << CPHA); break;
   }
 }
+
 void spi_SetBitOrder(SPI_BitOrder order)
 {
   // Установка выполняется битом DORD в регистре SPCR
@@ -72,6 +73,7 @@ void spi_SetBitOrder(SPI_BitOrder order)
 	   case SPI_LSB: SPCR |= (1 << DORD);  break;
    }
 }
+
 uint8_t spi_MasterTransmit(uint8_t data)
 {
   SPDR = data;
@@ -79,13 +81,4 @@ uint8_t spi_MasterTransmit(uint8_t data)
   return SPDR;
 }
 
-/*void SS_LOW()                   // DEBUG
-{
-	PORTB &= ~(1 << SPI_SS);
-}*/
 
-
-/*void SS_HIGH()                  // DEBUG
-{
-	PORTB |= (1 << SPI_SS);
-}*/

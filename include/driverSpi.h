@@ -46,8 +46,7 @@ void spi_SetMode(SPI_Mode mode);
 void spi_SetBitOrder(SPI_BitOrder order);
 uint8_t spi_MasterTransmit(uint8_t data);
 
-//void SS_LOW();  // DEBUG
-//void SS_HIGH(); // DEBUG
+
 
 
 
