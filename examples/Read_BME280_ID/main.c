@@ -13,12 +13,12 @@
 #include <util/delay.h>
 #include "driverSpi.h"
 
-static void CS_LOW(void)
+static void CS_LOW(void)  // Это пример управления пином (CS) драйвером устройства использующим Driver_SPI
 {
   PORTB &= ~(1 << PB2);
 }
 
-static void CS_HIGH(void)
+static void CS_HIGH(void) // Это пример управления пином (CS) драйвером устройства использующим Driver_SPI
 {
   PORTB |= (1 << PB2);
 }
