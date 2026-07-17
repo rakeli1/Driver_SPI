@@ -1,7 +1,9 @@
 
       #Driver_SPI
 
- SPI Master Driver for AVR ATmega8
+ SPI Master Driver for AVR ATmega8.
+ Tested on ATmega8. Designed to be portable across classic AVR microcontrollers
+ with a compatible SPI periferal
 
        ##Design Goal
 
