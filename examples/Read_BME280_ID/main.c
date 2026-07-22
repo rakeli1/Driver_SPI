@@ -11,7 +11,7 @@
 #define F_CPU 8000000UL
 #include <avr/io.h>
 #include <util/delay.h>
-#include "driverSpi.h"
+#include "Driver_SPIatm8.h"
 
 static void CS_LOW(void)  // Это пример управления пином (CS) драйвером устройства использующим Driver_SPI
 {
