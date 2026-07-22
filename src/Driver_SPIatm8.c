@@ -5,7 +5,7 @@
  *  Author: rakel
  */ 
 
-#include "driverSpi.h"
+#include "Driver_SPIatm8.h"
 #define SPI_SS   PB2
 #define SPI_MOSI PB3
 #define SPI_MISO PB4
